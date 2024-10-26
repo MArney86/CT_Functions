@@ -1,3 +1,4 @@
+#Task 1:
 def add_item(item_list, item): #define function that adds user items to our list
     
     if item not in item_list: #check if item is not already in list before adding to list
@@ -6,6 +7,7 @@ def add_item(item_list, item): #define function that adds user items to our list
     else: #item is in the list already
         print("That item is already in your list") #let user know that that item is already in the list
 
+#Task 2:
 def remove_item(item_list, item): #define function that removes user items from the list
     
     if item in item_list: #check first if item to remove is in the list
@@ -14,6 +16,7 @@ def remove_item(item_list, item): #define function that removes user items from 
     else: #item is not in list
         print("That item is not in your list") #let the user know they are trying to remove and item not in the list
 
+#Task 3:
 def print_items(item_list): #define the function that prints the list for user
     print("Your Shopping List:") #Heading for our list
     

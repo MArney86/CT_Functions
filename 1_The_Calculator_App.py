@@ -1,15 +1,17 @@
-def add_numbers(a, b): #define function that adds 2 numbers
+#Task 1:
+def add_numbers(a, b):
     return a + b #returns the sum
 
-def sub_numbers(a, b): #define function that subtracts 2 numbers
+def sub_numbers(a, b):
     return a - b #returns the difference
 
-def mult_numbers(a, b): #define function that multiplies 2 numbers
+def mult_numbers(a, b):
     return a * b #returns the product
 
-def div_numbers(a, b): #define function that divides 2 numbers
+def div_numbers(a, b):
     return a / b #returns the quotient
 
+#Task 2:
 while True:
     first_operand = float(input("Please input your first number: ")) #get your first operand from the user
     second_operand = float(input("Please input your second number: ")) #get your second operand for the user
@@ -28,6 +30,7 @@ while True:
         print(f"{first_operand} * {second_operand} = {solution:.5f}") # print product to user with 5 places of precision behind decimal
         
     elif operation.lower() == 'd': #check if user chose division
+        #Task 3:
         if second_operand == 0: #test for divide by 0
             print("Cannot complete operation: divide by zero is undefined") #let user know that the operation is not possible
         else: #operation is not divide by 0
@@ -37,6 +40,7 @@ while True:
     elif operation.lower() == 'q': #check if user chose to quit
         break #quit loop and program
     
+    #Task 3:
     else: #unanticipated input from user
         print("I didn't understand that selection, please try again") #let user know their choice is not in the menu and start loop over
     
